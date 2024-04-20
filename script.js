@@ -64,4 +64,16 @@ jQuery(document).ready(function ($) {
 	});
 
 });
+function validateForm() {
+    let x = document.forms["form"]["name"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+    let y = document.forms["form"]["item"].value;
+    if (y == "") {
+      alert("Item must be filled out");
+      return false;
+    }
+  };
 
